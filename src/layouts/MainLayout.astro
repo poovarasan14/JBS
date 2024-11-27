@@ -1,0 +1,22 @@
+<!-- ---
+import Header from "../modules/sales/shared/components/header/Header";
+import Sidebar from "../modules/sales/shared/components/sidebar/SideBar";
+import { ViewTransitions } from 'astro:transitions';
+
+---
+<html class="bg-gray-100 min-h-screen">
+    <head>
+        <title>My Homepage</title>
+        <ViewTransitions />
+      </head>
+    <body class="flex">
+        <Sidebar client:only="react" />
+        <div class="flex-1">
+            <Header />
+            <main class="p-6">
+                <slot />
+            </main>
+        </div>
+    </body>
+</html>
+<script is:inline src="../node_modules/flyonui/flyonui.js"></script> -->

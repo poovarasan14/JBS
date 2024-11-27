@@ -1,0 +1,25 @@
+{
+  "default": {
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    },
+    "paths": [
+      "e2e-tests/API-test/**/**/*.feature",
+      "e2e-tests/UI-test/**/**/*.feature"
+    ],
+    "require": [
+      "e2e-tests/API-test/**/**/*.step.ts",
+      "e2e-tests/UI-test/**/**/*.step.ts",
+      "e2e-tests/UI-test/support/hooks.ts"
+    ],
+    "requireModule": [
+      "ts-node/register"
+    ],
+    "dry-run": false,
+    "retry": 0,
+    "format": [
+      "json:report/cucumber-report.json",
+      "html:report/cucumber-report.html"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "@directus/tsconfig/node18-esm",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "dist",
+    "verbatimModuleSyntax": false,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+  },
+  "include": ["src/**/*"]
+}

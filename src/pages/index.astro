@@ -1,0 +1,20 @@
+---
+    import LeadComponent from '../modules/sales/lead/components/lead';
+    import LeadManagement from '../modules/sales/lead/components/LeadManagement';
+    import { ViewTransitions } from 'astro:transitions';
+    import SalesLayout from 'app/src/layouts/SalesLayout.astro';
+---
+
+    <!-- <h1>Welcome to Technological Telescope</h1> -->
+    
+    <!-- Render the React App only on the client to avoid SSR issues -->
+<!-- <LeadComponent client:only="react"/> -->
+ <SalesLayout>
+
+
+
+  <LeadManagement client:only="react"/>
+
+ 
+
+</SalesLayout>
